@@ -2,6 +2,11 @@
 # Ask the user for several numbers separated by spaces,
 # then print the sum of those numbers.
 
+numbers = input("give a few numbers: ")
+numbers_list = [int(n) for n in numbers.split()]
+sumNumbers = sum(numbers_list)
+print(sumNumbers)
+
 # Palindrome Checker
 # Ask the user for a word and print whether it is a
 # palindrome (reads the same forwards and backwards).
