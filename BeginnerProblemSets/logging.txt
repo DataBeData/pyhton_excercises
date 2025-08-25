@@ -1,0 +1,73 @@
+Problem Set
+1. Create a Transaction Log
+Create a CSV file that logs transactions. Each transaction should have:
+
+Transaction ID: A unique number (you can just increment it each time).
+
+Amount: The amount of money (positive for deposits, negative for withdrawals).
+
+Date: The date of the transaction (e.g., "2025-05-13").
+
+Balance: The current balance after the transaction.
+
+Write a program that:
+
+Starts with an initial balance of 0.
+
+Accepts deposits and withdrawals from the user.
+
+Logs each transaction to a CSV file (transactions.csv).
+
+Displays the current balance after each transaction.
+
+Make sure the program:
+
+Doesn't overwrite the existing CSV file.
+
+Adds a new row each time a transaction occurs.
+
+2. Read and Display Transaction History
+Write a function that:
+
+Reads the transaction log from transactions.csv.
+
+Displays a summary of all transactions (ID, Amount, Date).
+
+Displays the current balance at the end of the history.
+
+This function should be called whenever the user wants to see the transaction history.
+
+3. Filter Transactions by Date
+Extend the program so that the user can:
+
+Filter the transaction history by a specific date (e.g., "2025-05-13").
+
+Only show the transactions that occurred on that date.
+
+Display the filtered transactions along with the total amount for that day.
+
+4. Balance Update with Error Handling
+Modify the balance update part to:
+
+If the user tries to withdraw more than the current balance, print a warning message and don't process the withdrawal.
+
+If the user enters an invalid amount (e.g., non-numeric), handle the exception and ask the user to enter a valid amount.
+
+Bonus Challenge: Recalculate Total Balance from History
+Write a function that:
+
+Reads all the transactions from transactions.csv.
+
+Recalculates the balance by summing all the amounts in the transaction log (starting from 0).
+
+Prints the calculated balance and compares it with the stored balance in the CSV file to see if they match.
+
+Hints:
+CSV Writing: Make sure you're opening the CSV file in "a" mode (append) when logging new transactions.
+
+CSV Reading: Use csv.DictReader() to read and process the transactions into dictionaries.
+
+Filtering: You can filter the transactions using a simple condition like if row["date"] == "2025-05-13":.
+
+Ready to give it a try?
+Let me know if you need any hints along the way! These problems should give you a lot of practice with CSV I/O while also introducing some real-world concepts like logging, filtering, and error handling.
