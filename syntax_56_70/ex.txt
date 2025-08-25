@@ -1,0 +1,111 @@
+41. Read and Print Entire File
+Open a text file named example.txt and print its entire contents to the screen.
+
+42. Print First N Lines
+Open a file called poem.txt and print only the first 5 lines.
+
+43. Count Words in File
+Open article.txt and count the total number of words in the file.
+
+44. Copy File Content
+Copy the contents of source.txt into a new file called copy.txt.
+
+45. Replace Word in File
+Open instructions.txt, replace every occurrence of the word "old" with "new", and save the result in a new file updated_instructions.txt.
+
+46. Find Longest Line
+Open quotes.txt and print the longest line (based on character count).
+
+47. Append to File
+Write a Python script that appends a new line of text "Hello, file!" to an existing file log.txt.
+
+48. Count Lines with Specific Word
+Count how many lines in comments.txt contain the word "error" (case-insensitive).
+
+49. Remove Blank Lines
+Open data.txt, remove all blank lines, and write the cleaned content to clean_data.txt.
+
+50. Merge Two Files
+Open file1.txt and file2.txt, and write their contents into a new file called merged.txt.
+
+51. Read File into List
+Read the file shopping.txt where each line is an item. Store each item in a list and print it.
+
+52. Write List to File
+Given a list of strings, write each string to a new line in a file called output.txt.
+
+53. Print Line Numbers
+Open diary.txt and print each line prefixed with its line number (starting at 1).
+
+python
+Kopiëren
+Bewerken
+# Example output:
+# 1: Dear diary, today I...
+54. Extract Emails from File
+Read a file contacts.txt and print all words that contain the "@" symbol.
+
+55. Save Filtered Lines
+From feedback.txt, write only the lines that contain the word "positive" into a new file positive_feedback.txt.
+
+
+CSV excercises
+
+56. Read and Print CSV Rows
+Open a file called students.csv and print each row line by line.
+
+c
+Kopiëren
+Bewerken
+# Example content:
+# Name,Age,Grade
+# Alice,20,85
+# Bob,22,90
+57. Print a Specific Column
+Read students.csv and print only the "Name" column for all students.
+
+58. Count Rows
+Open employees.csv and count how many data rows are in the file (excluding the header).
+
+59. Filter Rows by Value
+Print all rows from sales.csv where the "Amount" column is greater than 1000.
+
+60. Write a New CSV File
+Create a new CSV file products.csv with headers Product, Price. Add at least three rows of sample data.
+
+61. Add a New Column
+Read students.csv, add a new column called "Passed" where the value is "Yes" if Grade ≥ 60, otherwise "No". Save it as students_updated.csv.
+
+62. Sum a Numeric Column
+Read expenses.csv and print the total of the "Cost" column.
+
+63. Get Unique Values
+Read books.csv and print a list of all unique values in the "Author" column.
+
+64. Convert CSV to List of Dicts
+Read a CSV file and convert it into a list of dictionaries (each row is a dict). Print the list.
+
+65. Write a List of Dicts to CSV
+You are given a list of dictionaries. Write them to a CSV file called output.csv.
+
+python
+Kopiëren
+Bewerken
+data = [
+  {"Name": "Alice", "Score": 90},
+  {"Name": "Bob", "Score": 80}
+]
+66. Find Average Value
+Open temperatures.csv and calculate the average temperature from the "Temp" column.
+
+67. Skip Empty Rows
+Read logs.csv and print only the non-empty rows.
+
+68. Print Header Only
+Read people.csv and print just the header row (column names).
+
+69. Search by Keyword
+Ask the user for a name and print all rows in contacts.csv where the "Name" column contains that name.
+
+70. Rename a Column in a CSV
+Read data.csv, rename the column "ID" to "UserID", and write the result to data_renamed.csv.
