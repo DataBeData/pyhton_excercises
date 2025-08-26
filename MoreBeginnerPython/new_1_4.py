@@ -96,8 +96,41 @@ print(result)
 # Fibonacci Sequence
 # Ask the user for a number n
 # and print the first n numbers in the Fibonacci sequence.
+"""
+
+def Fibonacci(n):
+    fib = [0, 1]
+    while len(fib) < n:
+        fib.append(fib[-1] + fib[-2])
+    return fib[:n]
+
+
+times = int(input("Give a number: "))
+print(Fibonacci(times))
+
+"""
 
 # Password Strength Checker
 # Ask the user for a password
 # and print whether it is strong (at least 8 characters, contains a number,
 # and a special character).
+
+while True:
+    password = input("Give me a password: ")
+
+    if len(password) < 8:
+        print("Error: not enough characters")
+        continue
+
+    has_number = any(char.isdigit() for char in password)
+    has_special = any(not char.isalnum() for char in password)
+
+    if not has_number:
+        print("Error: password must contain a number")
+        continue
+    if not has_special:
+        print("Error: password must contain a special character")
+        continue
+
+    print("Strong password!")
+    break
